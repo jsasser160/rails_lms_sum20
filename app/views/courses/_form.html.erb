@@ -1,0 +1,8 @@
+<h1>Add Course</h1>
+<%# form_with(model: @course, local: true, class: 'ui form') do |f| %>
+<%= form_for @course do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, placeholder: 'Course name' %>
+
+  <%= f.submit nil, class: 'ui blue button' %>
+<% end %>
